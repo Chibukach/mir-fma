@@ -14,6 +14,10 @@ lang: en
 	* Student: Chibueze Ukachi, \texttt{chibueze.ukachi@epfl.ch}
 	* Supervisor: Michaël Defferrard, \texttt{michael.defferrard@epfl.ch}
 	* Professor: Pierre Vandergheynst, \texttt{pierre.vandergheynst@epfl.ch}
+* Dates
+	* Project duration: 20.02 - 02.06.2017 (14 weeks)
+	* Delivery of the report to the lab: 09.06.2017
+	* Grades to be given to the Registar's office: 23.06.2017
 * Amount of work: 10 ECTS (1/3 of a semester)
 * Evaluation: A Jupyter notebook which explains (i) the problematic, (ii) the
   solution and, (iii) the results. Produced at the end of the project, no
