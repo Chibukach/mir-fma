@@ -6,6 +6,8 @@ include-before: ^1^ LTS2, EPFL, Switzerland
 date: \today
 numbersections: true
 lang: en
+header-includes:
+- \hypersetup{colorlinks=true,allcolors=blue}
 ---
 
 # Administration
@@ -88,7 +90,24 @@ For next week
 
 * Register on IS-Academia
 * Find a meeting time
-* Clone the GitHub repository
+* Import *fma_small* meta-data with pandas and explore the dataset
+* Load and listen to audio clips from Python
+
+## 2017-02-22
+
+Discussed
+
+* Loss function for classification: [cross entropy (negative log loss)](https://en.wikipedia.org/wiki/Cross_entropy)
+* Optimization algorithm (for Neural Networks): [stochastic gradient descent](https://en.wikipedia.org/wiki/Stochastic_gradient_descent)
+* Python library for audio feature extraction: [librosa](https://github.com/librosa/librosa)
+* Music Information Retrieval (MIR) resources
+	* [Stanford CCRMA workshop material](http://musicinformationretrieval.com)
+	* [Code & slides from a book](http://www.audiocontentanalysis.org)
+* We set up gitlab and cloned our private repository
+
+For next week
+
+* Familiarize yourself with MIR
 * Import *fma_small* meta-data with pandas and explore the dataset
 * Load and listen to audio clips from Python
 * If time allows, try a linear regression with sklearn for genre recognition
