@@ -1,6 +1,6 @@
 ---
-title: 'Music Information Retrieval on FMA'
-author:
+Title: 'Music Information Retrieval on FMA'
+Author:
 - Michaël Defferrard^1^
 include-before: ^1^ LTS2, EPFL, Switzerland
 date: \today
@@ -21,7 +21,7 @@ header-includes:
 	* Delivery of the report to the lab: 09.06.2017
 	* Grades to be given to the Registar's office: 23.06.2017
 * Amount of work: 10 ECTS (1/3 of a semester)
-* Evaluation: A Jupyter notebook which explains (i) the problematic, (ii) the
+* Evaluation: A Jupyter notebook which explains (i) the problem, (ii) the
   solution and, (iii) the results. Produced at the end of the project, no
   presentation required.
 * Meeting of ~1h every week
@@ -76,15 +76,19 @@ You may also want to look at the Keras library: <https://keras.io/>
 
 ## 2017-02-14
 
-Discussed
+#### Discussed
 
+Admin
 * Find a place in lab, ask Rosie for accreditation
 * Links: GitHub, paper
 * Fix day and time to meet
-* Chibu knows about scikit-learn, git, Jupyter, and ML from ADA
-* Will have to learn Keras and Deep Learning
 * git repository on gitlab
 * no machine with GPU, we'll make an account on the CDK
+
+Practice
+* Chibu knows about scikit-learn, git, Jupyter, and ML from ADA
+* Will have to learn Keras and Deep Learning
+
 
 For next week
 
@@ -95,15 +99,22 @@ For next week
 
 ## 2017-02-22
 
-Discussed
+#### Discussed
+
+Admin
+* We set up gitlab and cloned our private repository
+
+Theory
 
 * Loss function for classification: [cross entropy (negative log loss)](https://en.wikipedia.org/wiki/Cross_entropy)
 * Optimization algorithm (for Neural Networks): [stochastic gradient descent](https://en.wikipedia.org/wiki/Stochastic_gradient_descent)
+
+Practice 
 * Python library for audio feature extraction: [librosa](https://github.com/librosa/librosa)
 * Music Information Retrieval (MIR) resources
 	* [Stanford CCRMA workshop material](http://musicinformationretrieval.com)
 	* [Code & slides from a book](http://www.audiocontentanalysis.org)
-* We set up gitlab and cloned our private repository
+
 
 For next week
 
