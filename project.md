@@ -1,7 +1,8 @@
 ---
-Title: 'Music Information Retrieval on FMA'
-Author:
+title: 'Music Information Retrieval on FMA'
+author:
 - Michaël Defferrard^1^
+- Chibueze Ukachi^1^
 include-before: ^1^ LTS2, EPFL, Switzerland
 date: \today
 numbersections: true
@@ -76,9 +77,8 @@ You may also want to look at the Keras library: <https://keras.io/>
 
 ## 2017-02-14
 
-#### Discussed
-
 Admin
+
 * Find a place in lab, ask Rosie for accreditation
 * Links: GitHub, paper
 * Fix day and time to meet
@@ -86,9 +86,9 @@ Admin
 * no machine with GPU, we'll make an account on the CDK
 
 Practice
+
 * Chibu knows about scikit-learn, git, Jupyter, and ML from ADA
 * Will have to learn Keras and Deep Learning
-
 
 For next week
 
@@ -99,9 +99,8 @@ For next week
 
 ## 2017-02-22
 
-#### Discussed
-
 Admin
+
 * We set up gitlab and cloned our private repository
 
 Theory
@@ -109,12 +108,12 @@ Theory
 * Loss function for classification: [cross entropy (negative log loss)](https://en.wikipedia.org/wiki/Cross_entropy)
 * Optimization algorithm (for Neural Networks): [stochastic gradient descent](https://en.wikipedia.org/wiki/Stochastic_gradient_descent)
 
-Practice 
+Practice
+
 * Python library for audio feature extraction: [librosa](https://github.com/librosa/librosa)
 * Music Information Retrieval (MIR) resources
 	* [Stanford CCRMA workshop material](http://musicinformationretrieval.com)
 	* [Code & slides from a book](http://www.audiocontentanalysis.org)
-
 
 For next week
 
@@ -122,3 +121,31 @@ For next week
 * Import *fma_small* meta-data with pandas and explore the dataset
 * Load and listen to audio clips from Python
 * If time allows, try a linear regression with sklearn for genre recognition
+
+## 2017-03-03
+
+Achieved
+
+* Found references on ML for MIR
+* Notebook: read DataFrame, load and listen to songs, visualize various spectrograms computed by librosa, spectral features extraction
+* Good pipeline!
+* Found 2 problems in `fma_small`: some interviews and duplicate songs
+
+Discussed
+
+* Computer memory: don't expect to be able to load whole datasets
+	* Load by mini-batches when you need them, e.g. compute features for 100 songs, then for the next 100, etc.
+	* Store as [HDF5](https://support.hdfgroup.org/HDF5/) which only load when data is accessed
+	* If the features take time to be computed, it could be worthwhile to save them to disk so that feature extraction does not have to be done again
+* librosa resampling is very slow, use `librosa.load()` with `sr=None` for a ten folds speedup
+* Features extraction is a transformation of the representation
+	* For a better representation (be it sparse, compressed, etc.) for the ML task
+	* For dimensionality reduction (compression / summarization) --> computational efficiency, data visualization
+* Little trick to scale your figures in the notebook: `plt.figure(figsize=(15, 5))`
+
+For next week
+
+* Extract only one feature first and use it with a classifier for Genre Recognition
+	* Compute accuracy on training and testing sets
+* Try adding / removing features and observe the impact on the accuracy
+* Goal: identify the best features, i.e. the most discriminative for our task
