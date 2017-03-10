@@ -149,3 +149,19 @@ For next week
 	* Compute accuracy on training and testing sets
 * Try adding / removing features and observe the impact on the accuracy
 * Goal: identify the best features, i.e. the most discriminative for our task
+
+## 2017-03-10
+
+Achieved
+
+* Started some Machine Learning, inspired by NTDS
+
+Discussed
+
+* What is time-frequency analysis. Then log scale on frequency axis.
+* Filling the feature matrix one row at a time.
+
+For next week
+
+* Compute and save a feature matrix of size 4'000 by #features
+* Try linear regression on it and see the accuracy
