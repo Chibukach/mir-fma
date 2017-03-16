@@ -77,7 +77,7 @@ You may also want to look at the Keras library: <https://keras.io/>
 
 ## 2017-02-14
 
-Admin
+**Admin**
 
 * Find a place in lab, ask Rosie for accreditation
 * Links: GitHub, paper
@@ -85,12 +85,12 @@ Admin
 * git repository on gitlab
 * no machine with GPU, we'll make an account on the CDK
 
-Practice
+**Practice**
 
 * Chibu knows about scikit-learn, git, Jupyter, and ML from ADA
 * Will have to learn Keras and Deep Learning
 
-For next week
+**For next week**
 
 * Register on IS-Academia
 * Find a meeting time
@@ -99,23 +99,23 @@ For next week
 
 ## 2017-02-22
 
-Admin
+**Admin**
 
 * We set up gitlab and cloned our private repository
 
-Theory
+**Theory**
 
 * Loss function for classification: [cross entropy (negative log loss)](https://en.wikipedia.org/wiki/Cross_entropy)
 * Optimization algorithm (for Neural Networks): [stochastic gradient descent](https://en.wikipedia.org/wiki/Stochastic_gradient_descent)
 
-Practice
+**Practice**
 
 * Python library for audio feature extraction: [librosa](https://github.com/librosa/librosa)
 * Music Information Retrieval (MIR) resources
 	* [Stanford CCRMA workshop material](http://musicinformationretrieval.com)
 	* [Code & slides from a book](http://www.audiocontentanalysis.org)
 
-For next week
+**For next week**
 
 * Familiarize yourself with MIR
 * Import *fma_small* meta-data with pandas and explore the dataset
@@ -124,14 +124,14 @@ For next week
 
 ## 2017-03-03
 
-Achieved
+**Achieved**
 
 * Found references on ML for MIR
 * Notebook: read DataFrame, load and listen to songs, visualize various spectrograms computed by librosa, spectral features extraction
 * Good pipeline!
 * Found 2 problems in `fma_small`: some interviews and duplicate songs
 
-Discussed
+**Discussed**
 
 * Computer memory: don't expect to be able to load whole datasets
 	* Load by mini-batches when you need them, e.g. compute features for 100 songs, then for the next 100, etc.
@@ -143,7 +143,7 @@ Discussed
 	* For dimensionality reduction (compression / summarization) --> computational efficiency, data visualization
 * Little trick to scale your figures in the notebook: `plt.figure(figsize=(15, 5))`
 
-For next week
+**For next week**
 
 * Extract only one feature first and use it with a classifier for Genre Recognition
 	* Compute accuracy on training and testing sets
@@ -152,16 +152,38 @@ For next week
 
 ## 2017-03-10
 
-Achieved
+**Achieved**
 
 * Started some Machine Learning, inspired by NTDS
 
-Discussed
+**Discussed**
 
 * What is time-frequency analysis. Then log scale on frequency axis.
 * Filling the feature matrix one row at a time.
 
-For next week
+**For next week**
 
 * Compute and save a feature matrix of size 4'000 by #features
 * Try linear regression on it and see the accuracy
+
+## 2017-03-16
+
+**Achieved**
+
+* Fixed the feature extraction bug.
+* Obtained between 30 and 40% accuracy on `fma_small`.
+* Used features: (i) mean and std on whole MFCC, (ii) mean per MFCC row, (iii) std per MFCC row.
+
+**Discussed**
+
+* What is MFCC, how is it computed.
+* Paper with list of features: [A Survey of Audio-Based Music Classification and Annotation](http://ieeexplore.ieee.org/abstract/document/5664796/).
+* MIR system: (i) clipping, (ii) feature extraction, (iii) classification, (iv) voting.
+
+**For next week**
+
+* Refactor code to have less copy / paste, e.g. by using functions.
+* Instead of mean and std, try with whole MFCC.
+* Then either:
+	* Choose another feature and try to beat MFCC! Maybe join the two.
+	* Or cut in clips and use voting.
