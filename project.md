@@ -187,3 +187,22 @@ You may also want to look at the Keras library: <https://keras.io/>
 * Then either:
 	* Choose another feature and try to beat MFCC! Maybe join the two.
 	* Or cut in clips and use voting.
+
+## 2017-03-27
+
+**Achieved**
+
+* Divided songs into sections (or clips).
+* New features: spectral centroids and onsets for whole songs.
+
+**Discussed**
+
+* Shape of arrays and arrangement in computer memory. Numpy innermost convention.
+* STFT window size `n_fft` should be set, smaller (meaning overlaps) or equal to the hop size.
+* Never use `np.matrix`. Only use `np.ndarray` and `*` for element-wise multiplication and `@` for matrix multiplication.
+
+**For next week**
+
+* Implement voting
+* Continue with spectral centroids
+* Continue last week's tasks
