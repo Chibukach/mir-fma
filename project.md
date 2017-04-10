@@ -206,3 +206,21 @@ You may also want to look at the Keras library: <https://keras.io/>
 * Implement voting
 * Continue with spectral centroids
 * Continue last week's tasks
+
+## 2017-04-04
+
+**Achieved**
+
+* Train on features extracted from sections
+* Voting implemented
+
+**Discussed**
+
+* Statistics or not to resume features
+* `n_fft` and `hop_length`
+* Confusion about sections and tracks in ML part
+
+**For next week**
+
+* Compute features for all sections
+* Do the train / test split on songs, not sections
