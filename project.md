@@ -224,3 +224,20 @@ You may also want to look at the Keras library: <https://keras.io/>
 
 * Compute features for all sections
 * Do the train / test split on songs, not sections
+
+## 2017-04-13
+
+**Achieved**
+
+* Make sure about dimensions: song, segment, hop, #features.
+
+**Discussed**
+
+* Don't waste computations by reusing the spectrogram for multiple features.
+* Split is given
+* I will send you paper and code about new data format
+
+**For next week**
+
+* Be done with features
+* You can test ML part on Echonest features if you want
