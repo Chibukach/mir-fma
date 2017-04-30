@@ -241,3 +241,36 @@ You may also want to look at the Keras library: <https://keras.io/>
 
 * Be done with features
 * You can test ML part on Echonest features if you want
+
+## 2017-04-28
+
+**Achieved**
+
+* Not much, prediction on segments is still not working
+
+**Discussed**
+
+* Report
+	* Length: $\approx 15$ pages
+	* Questions you have to answer:
+		1. What is the problem?
+		2. Why is it important?
+		3. What others are doing?
+		4. What did you do?
+		5. Show and interpret your results.
+		6. Conclusion
+	* Deadline: June 9th
+* Feedback on his way of working
+	1. Focus & try to be more organized, e.g. with idea or code
+	2. Keep a steady pace (rapid at the beginning, slow in the middle)
+	3. Start simple and build complexity on top, do not move further while
+	   something is not working. Never do something you don't understand.
+* Links to new dataset version, code and paper
+* Precisely explained how do extract features by segments.
+
+**For next week**
+
+* Write the structure of the report.
+	* Titles (table of contents) and one sentence about what you'll write in each section.
+* Implement the presented method for feature extraction. It should not be more than 10 lines of Python!
+* Then use the ML and voting scheme already developed.
