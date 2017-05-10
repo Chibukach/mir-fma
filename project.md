@@ -274,3 +274,25 @@ You may also want to look at the Keras library: <https://keras.io/>
 	* Titles (table of contents) and one sentence about what you'll write in each section.
 * Implement the presented method for feature extraction. It should not be more than 10 lines of Python!
 * Then use the ML and voting scheme already developed.
+
+## 2017-05-05
+
+**Achieved**
+
+* Report shell
+* Feature extraction on segments
+
+**Discussed**
+
+* Report
+	* Table of contents
+	* What to write where
+* Hyper-parameters
+* Voting: only during testing, training is done on segments
+* Accuracy: measured on the segments and on the songs
+	* Accuracy on songs should be larger than the one on the segments
+
+**For next week**
+
+* Train and test ML models on segments
+* Measure accuracy on segments
