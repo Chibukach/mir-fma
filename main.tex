@@ -1,0 +1,176 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{mindmap}
+
+%my own commands which are styled below
+
+\newcommand{\mytitle}{Music Information Retrieval Using Random Forest Classifier \break }
+\newcommand{\bywhom}{by}
+\newcommand{\authorname}{Chibueze Ukachi \break}
+
+\newcommand{\semproj}{A \textbf{Semester Project} submitted}
+\newcommand{\where}{in the}
+\newcommand{\school}{School of Electrical Engineering}
+\newcommand{\labinfo}{Signal Processing Laboratory LTS2 \break}
+
+\newcommand{\labowner}{Supervised by: 
+Professor Pierre Vandergheynst \break}
+
+\newcommand{\assistance}{Assisted by: Micha\"el Defferrard}
+
+\newcommand{\monthandyear}{June 2017}
+
+
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\begin{document}
+%remove the page number in first page
+\thispagestyle{empty}
+
+
+%insert EPFL logo in first page
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.9]{pictures/epfl-logo.png}
+%\caption{The Universe}
+%\label{fig:univerise}
+\end{figure}
+
+
+%styling of each new command 
+\begin{center}
+\huge{\mytitle}
+\end{center}
+
+\begin{center}
+\bywhom
+\end{center}
+
+\begin{center}
+\textbf{\Large{\authorname}}
+
+\end{center}
+
+\begin{center}
+\semproj
+\end{center}
+
+\begin{center}
+ \where
+\end{center}
+
+\begin{center}
+\school
+\end{center}
+
+\begin{center}
+\labinfo
+\end{center}
+
+\begin{center}
+\textbf{\assistance}
+\end{center}
+
+\begin{center}
+\textbf{\labowner}
+\end{center}
+
+\begin{center}
+\monthandyear
+\end{center}
+
+
+\newpage
+\clearpage
+
+
+\setcounter{page}{1}
+\pagenumbering{roman}
+\section*{Acknowledgements}
+
+
+Thank you to Professor Pierre Vandergheynst for access to the Signal Processing Laboratory LTS2 and its facilities. Also, thank you to the many artists who released their Music License-Free and to the Free Music Archive team for collating all these songs into a single easily accessible platform. 
+\newline
+
+
+
+\noindent 
+Above all, thank you to Micha\"el Defferrard (Doctoral Assistant at EPFL) for your persistent support with this project.  My working pattern can sometimes be more like an alternating current than a direct current, so I thank you for being really patient through the lows and extremely supportive through the highs. It has been my greatest academic pleasure and honour to work with you. 
+
+\newpage
+
+
+\section*{Abstract}
+
+%Brief description of the FMA dataset and why we chose it. My proposed methodology and features that I used. %Max accuracy achieved. 
+This project covers the implementation of Music Genre Classifcation using the Free Music Archive (FMA) Dataset. 
+The FMA is a free, open and readily available Dataset. It was chosen because it has a sizeable song hub of over 80,000 songs, all of which are available under the non-restrictive Creative Commons Licence.  
+
+
+
+\noindent 
+\newline
+We will be implementing the Random Forest Classifier as the Base Case Machine Learning algorithm for Genre Classification because each tree is created using a random subset of the training data and also a random subset of the input features. It is therefore less susceptible to misclassifcation of individual songs.
+
+
+\noindent 
+\newline
+We propose the extraction of Time and Frequency Domain Features such as Zero Crossing Rate and Spectral Centroid, as well as the computation of different statistical moments to predict the Genres of individual songs. 
+
+
+
+\clearpage
+
+\newpage
+
+
+
+\listoffigures 
+\newpage
+
+
+
+\tableofcontents
+
+\newpage
+
+
+%\section{Introduction}
+
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\input{chapters/1introduction} % Introduction
+
+
+\input{chapters/2FMAdataset} % Introduction
+
+\input{chapters/3MIRandGR} % Introduction
+
+\input{chapters/4methodology} % Introduction
+\input{chapters/5experiments} % Introduction
+\input{chapters/6results} % Introduction
+\input{chapters/7future} % Introduction
+\input{chapters/8conclusions} % Introduction
+%
+
+
+
+
+
+
+\newpage
+
+\section{Bibliography}
+
+
+
+Here is the info \citep{adams1995hitchhiker}
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+
+
+\end{document}
